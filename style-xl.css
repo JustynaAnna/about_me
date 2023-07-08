@@ -55,6 +55,11 @@ nav a:hover{
     color: white;
 }
 
+nav a:focus{
+    outline: 2px solid var(--color-primary);
+    padding: 2px;
+}
+
 .nav-links{
     display: flex;
     justify-content: space-evenly;
@@ -76,6 +81,11 @@ nav a:hover{
 nav a:hover::after{
     width: 110%;
 }
+
+nav a:focus::after{
+    width: 0%;
+}
+
 .about-me{
     text-align: justify;
     padding: 20px 0 50px 0;
@@ -185,6 +195,7 @@ footer{
 .footer-social ul li a i{
     align-items: center;
     color: #ffffff;
+    vertical-align: middle;
 }
 
 .footer-social ul li a{
