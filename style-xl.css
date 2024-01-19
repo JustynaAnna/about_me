@@ -223,7 +223,8 @@ footer {
   }
 }
 @media only screen and (max-width: 368px) {
-  .footer-social ul li {
+  footer .container {
     display: block;
+    text-align: center;
   }
 }
