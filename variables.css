@@ -1,0 +1,18 @@
+:root {
+  --color-primary: #38ccae;
+  --color-primary2: #1b1b1b;
+  --text-color: #ffffff;
+  --container-background: linear-gradient(
+    to right top,
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0.25)
+  );
+  --h1-background: linear-gradient(
+    180deg,
+    var(--color-primary2),
+    var(--color-primary),
+    #ecfffb,
+    #ffffff
+  );
+  --body-background-mobile: #1f7060;
+}
