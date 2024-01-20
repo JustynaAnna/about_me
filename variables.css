@@ -14,5 +14,11 @@
     #ecfffb,
     #ffffff
   );
+
+  --footer-social-links-background: linear-gradient(
+    to right top,
+    var(--color-primary2),
+    var(--color-primary)
+  );
   --body-background-mobile: #1f7060;
 }

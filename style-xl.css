@@ -46,7 +46,6 @@ nav a {
 }
 nav a:hover {
   transform: scale(1.2);
-  color: var(--color-primary);
   color: var(--text-color);
 }
 nav a:focus {
@@ -176,11 +175,7 @@ footer {
   width: 30px;
   height: 30px;
   border-radius: 30%;
-  background: linear-gradient(
-    to right top,
-    var(--color-primary2),
-    var(--color-primary)
-  );
+  background: var(--footer-social-links-background);
   display: inline-block;
 }
 
