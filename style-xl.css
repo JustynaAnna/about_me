@@ -80,13 +80,15 @@ nav a:focus::after {
 }
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-weight: 800;
   text-align: center;
   padding: 20px;
   color: var(--color-primary);
 }
-h1 {
+h1,
+h4 {
   margin-top: 50px;
   background: var(--h1-background);
   color: transparent;
@@ -179,7 +181,22 @@ footer {
   display: inline-block;
 }
 
-@media only screen and (max-width: 768px) {
+.img-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 90px;
+}
+
+.bottom-photos {
+  margin-bottom: 50px;
+}
+
+.img {
+  height: 400px;
+  margin: 10px;
+}
+@media only screen and (max-width: 860px) {
   body {
     background: var(--body-background-mobile);
   }
@@ -199,10 +216,23 @@ footer {
   .about-me-list {
     padding: 0;
   }
+
+  .img-container {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  .bottom-photos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .img {
+    height: 300px;
+  }
 }
-@media only screen and (max-width: 368px) {
-  footer .container {
-    display: block;
-    text-align: center;
+@media only screen and (max-width: 577px) {
+  .mountains {
+    height: 200px;
   }
 }
