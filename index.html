@@ -19,8 +19,8 @@
     />
   </head>
   <body>
-    <header class="site-header" aria-label="Site Header">
-      <nav role="navigation" aria-label="Navigation Menu">
+    <header class="site-header">
+      <nav aria-label="Navigation Menu">
         <div class="container">
           <a href="#picture">Justyna Pawlik</a>
           <div class="nav-links">
@@ -35,22 +35,38 @@
         </div>
       </nav>
     </header>
-    <main role="main" aria-label="Site Content">
+    <main>
       <div class="container">
         <section>
-          <h1>Hi there! I&#8217;m Justyna</h1>
+          <h1 class="heading heading-special">Hi there! I'm Justyna</h1>
           <p class="about-me">
             I'm a beginner front-end almost-programmer &#x1F609;. I have the
             greatest interest in languages such as JavaScript, HTML and CSS. I
             treat each new project as an adventure. Although I don't have any
             commercial experience yet, I've definitely gained a passion and a
-            huge desire for continuous development. What motivates me to act is
-            the gaining knowledge and information that is still ahead of me. I'm
-            excited when I can learn something new and use that knowledge in my
-            code. If you are interested to cooperate with me, please reach out
-            to me via email!
+            huge desire for continuous development.
           </p>
-          <div class="picture" id="picture" aria-label="My picture"></div>
+          <p class="about-me">
+            What motivates me to act is the gaining knowledge and information
+            that is still ahead of me. I'm excited when I can learn something
+            new and use that knowledge in my code. If you are interested to
+            cooperate with me, please reach out to me via email!
+          </p>
+          <div class="img-container">
+            <img
+              src="zdjecia/justa.jpg"
+              class="picture img"
+              alt="A picture of me"
+            />
+          </div>
+          <!-- <figure class="picture" id="picture">
+            <img
+              src="zdjecia/justa.jpg"
+              class="picture"
+              alt="A picture of Justyna"
+            />
+            <figcaption>My picture</figcaption>
+          </figure> -->
           <p class="about-me">
             It gives me a lot of satisfaction to solve problems, particularly
             challenging ones and achieve expected results. I have spent a lot of
@@ -62,8 +78,8 @@
         <hr />
         <section>
           <div class="grid-container" id="courses">
-            <h2 id="header">My goal</h2>
-            <ul id="ul" class="about-me-list">
+            <h2 class="heading" id="my-goal">My Professional Goals</h2>
+            <ul id="professional-goals-list" class="about-me-list">
               <li class="section-li">
                 My goal is to work for a company where I can continue develop
                 myself further as an IT professional while also contributing to
@@ -79,8 +95,8 @@
                 I intend to improve my English language skills.
               </li>
             </ul>
-            <h2 id="header2">My courses</h2>
-            <ul id="ul2" class="about-me-list">
+            <h2 class="heading" id="my-courses">Courses I Have Completed</h2>
+            <ul id="completed-courses-list" class="about-me-list">
               <li class="section-li">
                 Completion of the "Java from basic" course conducted by Software
                 Development Academy
@@ -98,8 +114,10 @@
                 Author: Radosław Madecki.
               </li>
             </ul>
-            <h3 id="header3">Courses I am currently working on:</h3>
-            <ul id="ul3" class="about-me-list">
+            <h2 class="heading" id="courses-InProgress">
+              Courses I Am Currently Working On
+            </h2>
+            <ul id="current-courses-list" class="about-me-list">
               <li class="section-li">
                 Frontend developer. Video course. JavaScript. Intermediate
                 level. Author: Radosław Madecki.
@@ -112,7 +130,7 @@
         </section>
         <hr />
         <section>
-          <h4>A Bit About Me Beyond Coding</h4>
+          <h3 class="heading heading-special">A Bit About Me Beyond Coding</h3>
           <p>
             Personally, outside of programming, I love hiking in the mountains.
             I relax by enjoying the beauty of nature, but I also enjoy the
@@ -128,24 +146,44 @@
           </p>
           <div class="img-container">
             <div class="photos-section">
-              <img src="zdjecia/chopok.jpg" alt="" class="img mountains" />
-              <img src="zdjecia/Słowacja.jpg" alt="" class="img mountains" />
+              <img
+                src="zdjecia/chopok.jpg"
+                alt="View of the Chopok peak in the Tatra Mountains"
+                class="img mountains"
+              />
+              <img
+                src="zdjecia/Słowacja.jpg"
+                alt="Mountain panorama of Slovakia"
+                class="img mountains"
+              />
             </div>
             <div class="photos-section">
-              <img src="zdjecia/Słowacja3.jpg" alt="" class="img mountains" />
-              <img src="zdjecia/słowacja4.jpg" alt="" class="img mountains" />
-              <img src="zdjecia/Justyna.jpg" alt="" class="img" />
+              <img
+                src="zdjecia/Słowacja3.jpg"
+                alt="Another mountain panorama of Slovakia"
+                class="img mountains"
+              />
+              <img
+                src="zdjecia/słowacja4.jpg"
+                alt="Mountain panorama of Slovakia"
+                class="img mountains"
+              />
+              <img
+                src="zdjecia/Justyna.jpg"
+                alt="My selfie in the forest"
+                class="img"
+              />
             </div>
             <div class="photos-section">
-              <img src="zdjecia/krk.jpg" alt="" class="img" />
-              <img src="zdjecia/krk3.jpg" alt="" class="img" />
+              <img src="zdjecia/krk.jpg" alt="My dessert" class="img" />
+              <img src="zdjecia/krk3.jpg" alt="My breakfast." class="img" />
             </div>
           </div>
         </section>
       </div>
     </main>
 
-    <footer role="footer" aria-label="Footer">
+    <footer>
       <div class="container">
         <div>
           <a class="footer-contact" href="mailto:justynkapawlik@gmail.com"
@@ -160,7 +198,11 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i class="fa-brands fa-linkedin"></i>
+                <i
+                  class="fa-brands fa-linkedin"
+                  aria-hidden="true"
+                  title="Visit my LinkedIn profile"
+                ></i>
               </a>
             </li>
             <li>
@@ -169,7 +211,12 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 title="vimeo"
-                ><i class="fa-brands fa-github"></i
+                aria-label="Visit my GitHub profile"
+                ><i
+                  class="fa-brands fa-github"
+                  aria-hidden="true"
+                  title="GitHub"
+                ></i
               ></a>
             </li>
           </ul>
