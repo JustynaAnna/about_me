@@ -203,6 +203,7 @@ footer {
 
   nav .container {
     flex-direction: column;
+    height: auto;
   }
 
   .nav-links {
@@ -222,7 +223,7 @@ footer {
     flex-wrap: nowrap;
     align-items: center;
   }
-  .bottom-photos {
+  .photos-section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -234,5 +235,14 @@ footer {
 @media only screen and (max-width: 577px) {
   .mountains {
     height: 200px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  nav a {
+    font-size: x-small;
+  }
+  .img-container {
+    overflow: hidden;
   }
 }
